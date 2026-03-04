@@ -21,13 +21,14 @@ margin:0;
 h1{
 font-size:40px;
 letter-spacing:4px;
+margin-top:20px;
 }
 
 button{
-padding:12px 25px;
-margin:10px;
+padding:12px 20px;
+margin:8px;
 border:none;
-border-radius:25px;
+border-radius:20px;
 background:#00f0ff;
 color:black;
 font-weight:bold;
@@ -40,51 +41,14 @@ font-weight:bold;
 <body>
 
 <h1>EYEAI.CO</h1>
-<p>Future AR Models</p>
+<p>Futuristic AR Robots</p>
 
-<button onclick="model1()">NEON BOT</button>
-<button onclick="model2()">META DRONE</button>
-<button onclick="model3()">CYBER UNIT</button>
-<button onclick="model4()">AI CORE</button>
-
-<model-viewer
-id="viewer"
-src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-ar
-camera-controls
-auto-rotate
-style="width:100%; height:70vh;">
-</model-viewer>
-
-<script>
-
-function model1(){
-document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/Astronaut.glb";
-}
-
-function model2(){
-document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb";
-}
-
-function model3(){
-document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb";
-}
-
-function model4(){
-document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb";
-}
-
-</script>
-
-</body>
-</html>
-function model5(){
-document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb";
-}
-
-function model6(){
-document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb";
-}
+<button onclick="r1()">NOVA-X</button>
+<button onclick="r2()">CYBERION</button>
+<button onclick="r3()">QUANTEX</button>
+<button onclick="r4()">MECHA-Z</button>
+<button onclick="r5()">AURORA-BOT</button>
+<button onclick="r6()">NEO-CORE</button>
 
 <model-viewer
 id="viewer"
@@ -97,3 +61,40 @@ auto-rotate
 shadow-intensity="1"
 style="width:100%; height:70vh;">
 </model-viewer>
+
+<script>
+
+function r1(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/Astronaut.glb";
+document.getElementById("viewer").setAttribute("ios-src","https://modelviewer.dev/shared-assets/models/Astronaut.usdz");
+}
+
+function r2(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb";
+document.getElementById("viewer").setAttribute("ios-src","https://modelviewer.dev/shared-assets/models/RobotExpressive.usdz");
+}
+
+function r3(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb";
+document.getElementById("viewer").setAttribute("ios-src","https://modelviewer.dev/shared-assets/models/NeilArmstrong.usdz");
+}
+
+function r4(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb";
+document.getElementById("viewer").setAttribute("ios-src","https://modelviewer.dev/shared-assets/models/RobotExpressive.usdz");
+}
+
+function r5(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/Astronaut.glb";
+document.getElementById("viewer").setAttribute("ios-src","https://modelviewer.dev/shared-assets/models/Astronaut.usdz");
+}
+
+function r6(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb";
+document.getElementById("viewer").setAttribute("ios-src","https://modelviewer.dev/shared-assets/models/NeilArmstrong.usdz");
+}
+
+</script>
+
+</body>
+</html>
