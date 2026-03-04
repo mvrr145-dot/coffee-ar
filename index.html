@@ -10,20 +10,39 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
 
 </head>
 
-<body style="margin:0; font-family:sans-serif; text-align:center; background:#f2f2f2;">
+<body style="margin:0; text-align:center; font-family:sans-serif;">
 
-<h1>Nazar PV Cafe ☕</h1>
-<p>Scan & See Coffee in AR</p>
+<h1>Nazar PV Cafe</h1>
+<p>Select item to see in AR</p>
+
+<button onclick="coffee()">Coffee</button>
+<button onclick="burger()">Burger</button>
+<button onclick="pizza()">Pizza</button>
 
 <model-viewer
-src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/CoffeeCup/glTF-Binary/CoffeeCup.glb"
+id="viewer"
+src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
 ar
-ar-modes="scene-viewer webxr quick-look"
 camera-controls
 auto-rotate
-shadow-intensity="1"
-style="width:100%; height:80vh; background:white;">
+style="width:100%; height:80vh;">
 </model-viewer>
+
+<script>
+
+function coffee(){
+document.getElementById("viewer").src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/CoffeeCup/glTF-Binary/CoffeeCup.glb";
+}
+
+function burger(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/Hamburger.glb";
+}
+
+function pizza(){
+document.getElementById("viewer").src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb";
+}
+
+</script>
 
 </body>
 </html>
